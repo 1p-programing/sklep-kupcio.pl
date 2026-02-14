@@ -1,0 +1,7 @@
+# Build
+Makefile
+Dockerfile
+docker-compose.yml
+
+# Source
+src/connect.php
