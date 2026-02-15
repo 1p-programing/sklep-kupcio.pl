@@ -1,15 +1,31 @@
-.html {
+body {
 	font-size: 16px;
 }
 
-.body {
-	
-}
-
-.Logo {
-	
-}
+/* Category */
 
 .Category_1 {
-	
+	background-color: lightgray;
+}
+
+.item {
+	background-color: gray;
+	display: block;
+	width: 300px;
+	height: 350px;
+	margin: 20px 20px !important;
+}
+
+.item span {
+	display: block;
+}
+
+.item img {
+	width: 300px;
+	height: 250px;
+}
+
+.item .title {
+	font-weight: 700;
+	font-size: 20px;
 }
