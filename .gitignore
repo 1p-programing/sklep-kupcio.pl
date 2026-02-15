@@ -3,5 +3,8 @@ Makefile
 Dockerfile
 docker-compose.yml
 
+# Database
+database/
+
 # Source
 src/connect.php
