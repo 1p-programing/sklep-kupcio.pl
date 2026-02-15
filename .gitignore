@@ -5,6 +5,4 @@ docker-compose.yml
 
 # Database
 database/
-
-# Source
-src/connect.php
+src/bazaconfig.php
