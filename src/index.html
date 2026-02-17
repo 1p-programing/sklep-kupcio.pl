@@ -4,46 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<!-- FIXME: Pózneij usunąć ^^^^^ -->
-    <title>
-        Sklep
-    </title>
+	<!-- FIXME: Pózniej usunąć ^^^^^ -->
+    <title>Sklep</title>
 </head>
-<body>
-    <header>
+<body> <!-- Layout: Vlad Aldunov 16.02.2026 - 18.02.2026-->
+	<div class="container">
+		<header>
+			<div class="Nazwa"> 
+				TechShop
+			</div>
+			
+			<div class="Wyszukiwarka"> 
+				<input type="Text">
+			</div>
+			
+			<div class="Koszyk"> 
+				<button>Koszyk</button>
+			</div>
+		</header>
 		
-		<nav class="Wyszukiwarka"> 
-			<form action="search.php"> <!-- TODO: temporary -->
-				<label>
-					<input type="search" placeholder="szukaj">
-				</label>
-			</form>
-		</nav>
-		
-		<nav>	<!-- Kategorie -->
-			<ul>
-				<li>
+		<main>
+			<nav>	  <!-- !KATEGORIE -->
+				<div class="Category All"> 	
+					<button>Wszystkie</button>
+				</div>
+
+				<div class="Category Komputery">	
+					<button>Komputery</button>
+				</div>
+
+				<div class="Category Akcesoria">	
+					<button>Akcesoria</button>
+				</div>
+				
+				<div class="Category Foto-i-Video">	
+					<button>Foto i Video</button>
+				</div>
+				
+				<div class="Category Telefony">	
+					<button>Telefony</button>
+				</div>
+				
+				<div class="Category Moda">	
+					<button>Moda</button>
+				</div>
+			</nav>
 					
+			<ul>	<!-- !SPRZEDAWANE -->
+				<li>
+					<section class="Kartka-towaru Sluchawki">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
+					
+						</div>
+					</section>
 				</li>
 				
 				<li>
+					<section class="Kartka-towaru Laptop">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
 					
+						</div>
+					</section>
+				</li>
+					
+				<li>
+					<section class="Kartka-towaru Zegar">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
+					
+						</div>
+					</section>
+				</li>
+					
+				<li>
+					<section class="Kartka-towaru Aparat-fotograficzny">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
+					
+						</div>
+					</section>
+				</li>
+				
+				<li>
+					<section class="Kartka-towaru Smartphone">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
+					
+						</div>
+					</section>
+				</li>
+					
+				<li>
+					<section class="Kartka-towaru Buty">	
+						<div class="img">
+							<img src="#">
+						</div>
+						
+						<div>
+					
+						</div>
+					</section>
 				</li>
 			</ul>
-		</nav>
-    </header>
-
-    <main>	<!-- Glówny content na stronie -->
-		<section class="Category_1">	
-			<h1 style="margin: 20px;">Kategoria 1</h1>
-			<a>
-				<div class="item">
-					<img class="prod_img" src="img/tmp_m1.png" alt="Image">
-					<span class="title">Title</span>
-					<span class="short_desc">Desc</span>
-				</div>
-			</a>
-		</section>
-    </main>
+		</main>
+	<footer>	<!--copyright, może coś jescze...-->
+	
+	</footer>
+	</div>
 </body>
 </html>

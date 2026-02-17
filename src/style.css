@@ -1,31 +1,153 @@
+* {
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+html {
+	min-width: 410px;
+	font-size: 16px; 
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	font-size: 16px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
 }
 
-/* Category */
-
-.Category_1 {
-	background-color: lightgray;
+.container {
+	max-width: 1200px;
+	min-width: 210px;
+	min-height: 100vh;
+	margin: 0 auto;
 }
 
-.item {
-	background-color: gray;
-	display: block;
-	width: 300px;
-	height: 350px;
-	margin: 20px 20px !important;
+header {
+	display: flex;
+	height: 40px;
 }
 
-.item span {
-	display: block;
+.Nazwa {
+	width: 20%;
+	font-size: 0.8rem;
+	align-content: center;
 }
 
-.item img {
-	width: 300px;
-	height: 250px;
+.Wyszukiwarka {
+	width: 60%;
+	align-content: center;
 }
 
-.item .title {
-	font-weight: 700;
-	font-size: 20px;
+.Koszyk {
+	width: 20%;
+	align-content: center;
+}
+
+main {
+	height: 9999px; /*FIXME: zmienić to póżniej. */
+}
+
+main nav {
+	display: flex;
+	height: 30px;
+}
+	/*
+	.Category {
+		
+	}
+
+	.All {
+		
+	}
+
+	.Komputery {
+		
+	}
+
+	.Akcesoria {
+		
+	}
+
+	.Foto-i-Video {
+		
+	}
+
+	.Telefony {
+		
+	}
+
+	.Moda {
+		
+	}
+	*/
+main ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	list-style: none;
+	padding: 0 5px;
+	grid-gap: 3vw;
+}
+
+main li {
+	width: clamp(8rem, 30vw, 20rem);
+	height: clamp(5rem, 20vw, 13rem);
+}
+
+.Kartka-towaru {
+	width: clamp(8rem, 30vw, 20rem);
+	height: clamp(5rem, 20vw, 13rem);
+}	
+	/*
+	.Sluchawki {
+		
+	}
+
+	.Laptop {
+		
+	}
+
+	.Zegar {
+		
+	}
+
+	.Aparat-fotograficzny {
+		
+	}
+
+	.Smartphone {
+		
+	}
+
+	.Buty {
+		
+	}
+	*/
+	
+.img {
+	width: clamp(8rem, 30vw, 20rem);
+	height: clamp(1rem, 12.5vw, 9rem);
+}
+
+footer {
+	
+}
+
+@media (min-width: 1024px) {
+	main ul {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+	main ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 599px) {
+	main ul {
+		grid-template-columns: 1fr;
+	}
 }
