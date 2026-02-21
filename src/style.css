@@ -201,17 +201,63 @@ main li {
 */	
 
 
-.img {
-	width: clamp(8rem, 30vw, 20rem);
-	height: clamp(1rem, 12.5vw, 9rem);
+/* PRODUKTY */
+.produkty {
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.produkt_kafelek {
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	background-color: lightblue;
+	border-radius: 10px 10px;
+}
 
-.img-photo { 
+.produkt_kafelek .img {
+	width: 300px;
+	height: 200px;
+}
+
+.produkt_kafelek .category {
+	display: block;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: gray;
+}
+
+.produkt_kafelek .title {
+	display: block;
+}
+
+.produkt_kafelek .price {
+	margin-right: auto;
+	display: inline-block;
+	color: #FFBB00;
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.produkt_kafelek .buy {
+	margin-right: auto;
+	background-color: #FFBB00;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: 700;
+
+	float: right;
+}
+
+/* END */
+
+
+/* .img-photo { 
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
+} */
 
 
 footer {
