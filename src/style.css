@@ -29,9 +29,21 @@ header {
 }
 
 .Nazwa {
+	padding-left: 0.4vw;
+	background-color: #FF0000;
+	color: #FFFF00;
+	font-family: monospace;
+	letter-spacing: -0.5px;
 	width: 20%;
 	font-size: 0.8rem;
 	align-content: center;
+}
+
+.Nazwa-Text {
+	background-color: #FF3535;
+	border-radius: 6px;
+	font-size: clamp(0.7rem, 1.8vw, 1.35rem);
+	text-shadow: 1px 0.5px 0.5px #550000;
 }
 
 .Wyszukiwarka {
@@ -44,43 +56,83 @@ header {
 	align-content: center;
 }
 
+.Koszyk-button {
+	margin-left: 4vw;
+	width: 70%;
+	height: 80%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
 main {
 	height: 9999px; /*FIXME: zmienić to póżniej. */
 }
 
 main nav {
+	font-family: monospace;
+	letter-spacing: -0.5px;
 	display: flex;
-	height: 30px;
+	height: clamp(2rem, 3vw, 3rem);
+	gap: clamp(0.4rem, 0.7vw, 2rem);
 }
-	/*
-	.Category {
-		
-	}
 
-	.All {
-		
+.Category {
+	text-align: center;
+	padding: clamp(0.2rem, 0.3vw, 1.3rem) 0;
+	background-color: #FFBB00;
+	border-radius: 8px;
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	width: 100%;
+	height: clamp(2rem, 2.5vw, 3rem);
+	a:link {
+		cursor: pointer;
+		text-decoration: none;
+		text-shadow: 1px 1px 0.5px #222222;
 	}
+	
+	a:visited {
+		cursor: pointer;
+		text-decoration: none;
+		color: #FF0000;
+	}
+	
+	a:hover {
+		cursor: pointer;
+		text-decoration: none;
+		color: #FFE9E9;
+	}
+	
+	a:active {
+		cursor: pointer;
+		text-decoration: none;
+		color: #FF3535;
+	}
+}
 
-	.Komputery {
-		
-	}
+.All {
+	
+}
 
-	.Akcesoria {
-		
-	}
+.Komputery {
+	
+}
 
-	.Foto-i-Video {
-		
-	}
+.Akcesoria {
+	
+}
 
-	.Telefony {
-		
-	}
+.Foto-i-Video {
+	
+}
 
-	.Moda {
-		
-	}
-	*/
+.Telefony {
+	
+}
+
+.Moda {
+	
+}
+
 main ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
