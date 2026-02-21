@@ -86,49 +86,81 @@ main ul {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	list-style: none;
-	padding: 0 5px;
-	grid-gap: 3vw;
+	padding: 30px;
+	grid-gap: 5vw;
+	margin-left: auto;
+	margin-right: auto;
 }
+
 
 main li {
 	width: clamp(8rem, 30vw, 20rem);
 	height: clamp(5rem, 20vw, 13rem);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .Kartka-towaru {
 	width: clamp(8rem, 30vw, 20rem);
 	height: clamp(5rem, 20vw, 13rem);
 }	
-	/*
-	.Sluchawki {
+
+
+/*
+	.Sluchawki 
+	{
 		
 	}
 
-	.Laptop {
+
+
+	.Laptop 
+	{
 		
 	}
 
-	.Zegar {
+
+
+	.Zegar 
+	{
 		
 	}
 
-	.Aparat-fotograficzny {
+
+
+	.Aparat-fotograficzny 
+	{
 		
 	}
 
-	.Smartphone {
+
+
+	.Smartphone 
+	{
 		
 	}
 
-	.Buty {
+
+
+	.Buty 
+	{
 		
 	}
-	*/
-	
+*/	
+
+
 .img {
 	width: clamp(8rem, 30vw, 20rem);
 	height: clamp(1rem, 12.5vw, 9rem);
 }
+
+
+.img-photo { 
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 
 footer {
 	
