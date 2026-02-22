@@ -1,48 +1,37 @@
-* {
+* { /*  Debug */
 	box-sizing: border-box;
 	border: 1px solid black;
 }
 
-html {
-	min-width: 410px;
+body {
+	/* background-image: url(); */
 	font-size: 16px; 
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	background-color: white;
-	margin: 0;
-	padding: 0;
+	font-family: monospace;
 }
 
 .container {
 	max-width: 1200px;
-	min-width: 210px;
-	min-height: 100vh;
 	margin: 0 auto;
 }
 
 header {
-	display: flex;
+	display: flex; /* FIXME: tu niewiem*/
 	height: 40px;
 }
 
 .Nazwa {
-	padding-left: 0.4vw;
-	background-color: #FF0000;
-	color: #FFFF00;
-	font-family: monospace;
-	letter-spacing: -0.5px;
 	width: 20%;
-	font-size: 0.8rem;
-	align-content: center;
-}
+	letter-spacing: -0.5px;
+	text-align: center;
+	padding: 2px;
 
-.Nazwa-Text {
 	background-color: #FF3535;
-	border-radius: 6px;
-	font-size: clamp(0.7rem, 1.8vw, 1.35rem);
+	color: #FFFF00;
+	border-radius: 5px;
+
+	font-size: 1.2rem;
 	text-shadow: 1px 0.5px 0.5px #550000;
 }
 
@@ -56,150 +45,52 @@ header {
 	align-content: center;
 }
 
-.Koszyk-button {
-	margin-left: 4vw;
-	width: 70%;
-	height: 80%;
-	background-color: #ffffff;
-	border-radius: 10px;
-}
+/* KATEGORIE (nav) */
 
-main {
-	height: 9999px; /*FIXME: zmienić to póżniej. */
-}
-
-main nav {
-	font-family: monospace;
+nav ul {
+	justify-content: center;
 	letter-spacing: -0.5px;
+	list-style-type: none;
+	list-style-position: outside;
 	display: flex;
-	height: clamp(2rem, 3vw, 3rem);
-	gap: clamp(0.4rem, 0.7vw, 2rem);
+	gap: 5px;
+	padding: 0;
 }
 
-.Category {
+nav li {
 	text-align: center;
-	padding: clamp(0.2rem, 0.3vw, 1.3rem) 0;
+	padding: 5px;
 	background-color: #FFBB00;
 	border-radius: 8px;
-	font-size: clamp(1rem, 2vw, 1.5rem);
+	font-size: 1.7rem;
 	width: 100%;
-	height: clamp(2rem, 2.5vw, 3rem);
-	a:link {
-		cursor: pointer;
-		text-decoration: none;
-		text-shadow: 1px 1px 0.5px #222222;
-	}
-	
-	a:visited {
-		cursor: pointer;
-		text-decoration: none;
-		color: #FF0000;
-	}
-	
-	a:hover {
-		cursor: pointer;
-		text-decoration: none;
-		color: #FFE9E9;
-	}
-	
-	a:active {
-		cursor: pointer;
-		text-decoration: none;
-		color: #FF3535;
-	}
 }
 
-.All {
-	
+/* LINKI */
+
+a:link {
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 1px 1px 0.5px #222222;
 }
 
-.Komputery {
-	
+a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color: #FF0000;
 }
 
-.Akcesoria {
-	
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFE9E9;
 }
 
-.Foto-i-Video {
-	
+a:active {
+	cursor: pointer;
+	text-decoration: none;
+	color: #FF3535;
 }
-
-.Telefony {
-	
-}
-
-.Moda {
-	
-}
-
-main ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	list-style: none;
-	padding: 30px;
-	grid-gap: 5vw;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-main li {
-	width: clamp(8rem, 30vw, 20rem);
-	height: clamp(5rem, 20vw, 13rem);
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.Kartka-towaru {
-	width: clamp(8rem, 30vw, 20rem);
-	height: clamp(5rem, 20vw, 13rem);
-}	
-
-
-/*
-	.Sluchawki 
-	{
-		
-	}
-
-
-
-	.Laptop 
-	{
-		
-	}
-
-
-
-	.Zegar 
-	{
-		
-	}
-
-
-
-	.Aparat-fotograficzny 
-	{
-		
-	}
-
-
-
-	.Smartphone 
-	{
-		
-	}
-
-
-
-	.Buty 
-	{
-		
-	}
-*/	
-
 
 /* PRODUKTY */
 .produkty {
@@ -248,20 +139,6 @@ main li {
 	font-weight: 700;
 
 	float: right;
-}
-
-/* END */
-
-
-/* .img-photo { 
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
-
-
-footer {
-	
 }
 
 @media (min-width: 1024px) {
