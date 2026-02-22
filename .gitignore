@@ -5,3 +5,4 @@ docker-compose.yml
 
 # Source
 src/connect.php
+database/
