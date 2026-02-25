@@ -22,7 +22,7 @@ header {
 }
 
 .Nazwa {
-	width: 20%;
+	float: left;
 	letter-spacing: -0.5px;
 	text-align: center;
 	padding: 2px;
@@ -36,14 +36,14 @@ header {
 }
 
 .Wyszukiwarka {
-	width: 60%;
 	align-content: center;
 	justify-content: center;
 	display: flex;
+	width: 100%;
 }
 
 .Koszyk {
-	width: 20%;
+	float: right;
 	align-content: center;
 	text-align: center;
 }
@@ -108,10 +108,11 @@ nav li {
 a:link {
 	cursor: pointer;
 	text-decoration: none;
+	color: #FF0000;
 	text-shadow: 1px 1px 0.5px #222222;
 }
 
-a:visited {
+/* a:visited {
 	cursor: pointer;
 	text-decoration: none;
 	color: #FF0000;
@@ -127,7 +128,7 @@ a:active {
 	cursor: pointer;
 	text-decoration: none;
 	color: #FF3535;
-}
+} */
 
 /* PRODUKTY */
 .produkty {
@@ -190,12 +191,32 @@ a:active {
 	}
 }
 
-@media (max-width: 599px) {
+/* @media (max-width: 599px) {
 	main ul {
 		grid-template-columns: 1fr;
 	}
 	
 	.Koszyk-btn {
 		padding: 4px 0px;
+	}
+} */
+
+@media (max-width: 700px) {
+	/* INPUT INNY */
+	.search_input {
+		font-size: 18px;
+		justify-content: center;
+		padding: 5px;
+		border-radius: 10px 10px;
+		width: 200px;
+		margin-top: 3px;
+		border: 2px solid red;
+	}
+	.icon-2 {
+		display: none;
+	}
+	.search_input_real {
+		margin: 0px;
+		width: 70%;
 	}
 }
