@@ -167,6 +167,17 @@ a:hover {
 	float: right;
 }
 
+
+.produkt_kafelek .del {
+	background-color: #DD0000 !important;
+}
+.podsumowanie {
+	color: #FFBB00;
+	font-weight: 700;
+	font-size: 2rem;
+	float: right;
+}
+
 @media (min-width: 1024px) {
 	main ul {
 		grid-template-columns: repeat(3, 1fr);
