@@ -1,6 +1,6 @@
 * { /*  Debug */
 	box-sizing: border-box;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 body {
@@ -105,17 +105,11 @@ nav li {
 
 /* LINKI */
 
-a:link {
+a {
 	cursor: pointer;
 	text-decoration: none;
 	color: #FF0000;
 	text-shadow: 1px 1px 0.5px #222222;
-}
-
-/* a:visited {
-	cursor: pointer;
-	text-decoration: none;
-	color: #FF0000;
 }
 
 a:hover {
@@ -123,12 +117,6 @@ a:hover {
 	text-decoration: none;
 	color: #FFE9E9;
 }
-
-a:active {
-	cursor: pointer;
-	text-decoration: none;
-	color: #FF3535;
-} */
 
 /* PRODUKTY */
 .produkty {
