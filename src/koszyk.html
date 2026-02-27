@@ -60,14 +60,11 @@
 			</nav> -->
 					
 			<!-- !SPRZEDAWANE -->
-			<div class="produkty">
-				<div class="produkt_kafelek">
-					<img src="img/kur.jpg" class="img">
-					<span class="category">Moda</span>
-					<span class="title">Pączek</span>
-					<span class="price">0.05 zł</span>
-					<a href="#" class="buy del">Usuń</a>
-				</div>
+             <br>
+            <button onclick="renderujKoszyk()">renderujKoszyk</button>
+            <button onclick="clearKoszyk()">czyść koszyk</button>
+			<div class="produkty" id="products">
+				Ładowanie produktów..
 			</div>
 			<div style="clear: both;"></div>
             <div class="podsumowanie">
@@ -78,6 +75,34 @@
 		</main>
 	<footer>
 		<script src="js/koszyk.js"></script>
+        <script>
+            function renderujKoszyk() {
+                const products = document.getElementById('products');
+                const cart = getKoszyk();
+
+                // clear elements!!
+                products.innerHTML = "";
+
+                cart.forEach(id => {
+                    const kafelek = `
+                        <div class="produkt_kafelek" data-id="${id}">
+                            <img src="img/kur.jpg" class="img">
+                            <span class="category">Moda</span>
+                            <span class="title">Produkt ID: ${id}</span>
+                            <span class="price">0.05 zł</span>
+                            <a href="#" class="buy del" onclick="usunZKoszyka(${id})">Usuń</a>
+                        </div>
+                    `;
+                    
+                    // Dodajemy kafelek do strony
+                    products.innerHTML += kafelek;
+                });
+            }
+
+            //onload = renderujKoszyk;
+
+
+        </script>
 
     	&copy; 2026 1P Programing Wszelkie prawa zastrzeżone.<br>
 		Kontakt: 123 456 789
