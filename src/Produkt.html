@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/fontello.css">
+    <title>Sklep</title>
+	<meta name="keywords" content="media expert, sklep, Chiny">
+</head>
+<body> <!-- Layout: Vlad Aldunov 16.02.2026 - 18.02.2026-->
+	<div class="container">
+		<header>
+			<div class="Nazwa"> 
+				Chiński Media Expert
+			</div>
+			
+			<div class="Wyszukiwarka"> 
+				<form action="." method="get">
+					<div class="search_input">
+						<i class="icon-search icon-2"></i>
+						<input type="text" class="search_input_real" name="searchq" placeholder="Szukaj produktów.. baranie">
+						<button>apply</button>
+					</div>
+				</form>
+				
+			</div>
+			
+			<div class="Koszyk"> 
+				<a href="#" class="Koszyk-btn">Koszyk</a>
+			</div>
+		</header>
+		
+		<main>
+			<nav>	
+				<a href="index.html" class="PDS"><br> <!-- PDS - Powrót do sklepu -->
+					<img src="Ikonka strzałki w lewo">Powrót do sklepu
+				</a>
+			</nav>
+					
+			<div class="produkty">
+				<div class="produkt_kafelek" id="zdjęcie_produkta">
+					<img src="img/sluchawki.jpg" id="produkt_img">
+				</div>
+
+				<div class="produkt_kafelek" id="Kartka_z_opisem">
+					<span id="opis_category">Kategoria</span><br>
+					<span id="opis_title">Tytuł</span>
+					<span id="Cechy">
+						<h3>Kluczowe cechy:</h3>
+						<ul>
+							<li>
+								Cecha1
+							</li>
+							
+							<li>
+								Cecha2
+							</li>
+							
+							<li>
+								Cecha3
+							</li>
+							
+							<li>
+								Cecha4
+							</li>
+							
+							<li>
+								Cecha5
+							</li>
+							
+							<li>
+								Cecha6
+							</li>
+						</ul>
+					</span>
+					<div class="opis_bottom">
+						<span id="opis_price">Cena zł</span>
+						<a href="#" class="buy">Dodaj do koszyka</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	<footer>
+		<script>
+    		document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
+
+    	&copy; <span id="year"></span> 1P Programing Wszelkie prawa zastrzeżone.<br>
+		Kontakt: 123 456 789
+
+	</footer>
+	</div>
+</body>
+</html>
