@@ -12,7 +12,7 @@ Categories: Computers, Accessories, Photo & Video, Phones, Fashion.
 This project is realizowany w trzy osoby
 
 ## Current state of project
-![alt](src/img/image-4.png)
+![alt](src/img/image-5.png)
 
 ## Licence
 See LICENCE file
