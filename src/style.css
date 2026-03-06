@@ -30,8 +30,9 @@ header {
 	background-color: #FF3535;
 	color: #FFFF00;
 	border-radius: 5px;
+	border: 3px solid #CC3535;
 
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-shadow: 1px 0.5px 0.5px #550000;
 }
 
@@ -91,16 +92,16 @@ nav ul {
 	display: flex;
 	gap: 5px;
 	padding: 0;
-	overflow-x: scroll;
 }
 
 nav li {
 	text-align: center;
 	padding: 5px;
-	background-color: #FFBB00;
+	background-color: #FADA00;
 	border-radius: 8px;
 	font-size: 1.7rem;
 	width: 100%;
+	border: 3px solid #FAB800;
 }
 
 /* LINKI */
@@ -145,15 +146,26 @@ a:hover {
 }
 
 .produkt_kafelek .title {
+	font-size: 1.2rem;
 	display: block;
+}
+
+.produkt_kafelek .oldprice {
+	margin-right: auto;
+	display: inline-block;
+	color: #FF0000;
+	font-size: 25px;
+	margin-top: 5px;
+	text-shadow: 0.9px 1px 1px black;
 }
 
 .produkt_kafelek .price {
 	margin-right: auto;
 	display: inline-block;
 	color: #FFBB00;
-	font-size: 24px;
+	font-size: 25px;
 	margin-top: 5px;
+	text-shadow: 0.9px 1px 1px black;
 }
 
 .produkt_kafelek .buy {
@@ -163,13 +175,15 @@ a:hover {
 	padding: 10px;
 	text-decoration: none;
 	font-weight: 700;
-
+	border: 2px solid #FF9100;
+	
 	float: right;
 }
 
 .produkt_kafelek .del {
 	background-color: #DD0000 !important;
 }
+
 .podsumowanie {
 	color: #FFBB00;
 	font-weight: 700;
@@ -224,6 +238,18 @@ footer {
 	.search_input_real {
 		margin: 0px;
 		width: 70%;
+	}
+}
+
+@media (max-width: 530px) {
+	.Nazwa {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 850px) {
+	nav ul {
+		overflow-x: scroll;
 	}
 }
 
